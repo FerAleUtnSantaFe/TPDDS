@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="557.0" prefWidth="774.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Interfaz.Controladores.GestionarPuestos">
+   <children>
+      <Label layoutX="31.0" layoutY="83.0" text="Código" />
+      <Label layoutX="269.0" layoutY="83.0" text="Puesto" />
+      <Label layoutX="505.0" layoutY="83.0" text="Empresa" />
+      <TextField fx:id="codigoTextField" layoutX="85.0" layoutY="79.0" />
+      <TextField fx:id="puestoTextField" layoutX="322.0" layoutY="79.0" />
+      <TextField fx:id="empresaTextField" layoutX="573.0" layoutY="79.0" />
+      <Button fx:id="nuevoButton" layoutX="37.0" layoutY="164.0" mnemonicParsing="false" onAction="#darDeAlta" prefHeight="25.0" prefWidth="84.0" text="Nuevo" />
+      <Button fx:id="modificarButton" layoutX="136.0" layoutY="164.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" text="Modificar" />
+      <Button fx:id="eliminarButton" layoutX="234.0" layoutY="164.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" text="Eliminar" />
+      <Button fx:id="reestablecerButton" layoutX="334.0" layoutY="164.0" mnemonicParsing="false" text="Reestablecer" />
+      <Button fx:id="buscarButton" layoutX="656.0" layoutY="164.0" mnemonicParsing="false" onAction="#buscar" prefHeight="25.0" prefWidth="84.0" text="Buscar" />
+      <TableView fx:id="tablaPuestos" layoutX="37.0" layoutY="205.0" prefHeight="305.0" prefWidth="703.0">
+        <columns>
+          <TableColumn fx:id="codigoColumna" prefWidth="194.0" text="Código" />
+          <TableColumn fx:id="puestoColumna" prefWidth="225.0" text="Puesto" />
+            <TableColumn fx:id="empColumna" prefWidth="197.0" text="Empresa" />
+            <TableColumn fx:id="selColumna" prefWidth="86.0" text="[]" />
+        </columns>
+      </TableView>
+      <Button fx:id="cancelarButton" layoutX="656.0" layoutY="523.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" text="Cancelar" />
+   </children>
+</AnchorPane>
